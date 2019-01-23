@@ -17,7 +17,7 @@
 }
 
 #app-mount .container-1UB9sr {
-	background: --transparency-2;
+	background: var(--transparency-2);
 	background-color: transparent;
 }
 
