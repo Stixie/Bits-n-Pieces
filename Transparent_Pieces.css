@@ -11,9 +11,14 @@
 	background-image: var(--transparency-1);
 }
 
-.container-PNkimc, .privateChannels-1nO12o, .da-app .container-1UB9sr, .da-app .sidebarRegion-VFTUkN, .da-app .container-2Thooq {
+.container-PNkimc, .privateChannels-1nO12o, .da-app .sidebarRegion-VFTUkN, .da-app .container-2Thooq {
 	background: transparent;
 	background-image: var(--transparency-2);
+}
+
+#app-mount .container-1UB9sr {
+	background: --transparency-2;
+	background-color: transparent;
 }
 
 .da-app .activityFeed-28jde9, .da-app .gameLibrary-TTDw4Y, .da-app .applicationStore-1pNvnv, .da-app #friends, .da-app .contentRegion-3nDuYy, .da-app .noChannel-Z1DQK7, .da-app .container-3gCOGc {
