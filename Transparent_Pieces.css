@@ -50,5 +50,5 @@
     border-radius:0px;
 }
 
-#app-mount {background: --var-bg-link) center/cover no-repeat}
+#app-mount {background: var(--bg-link) center/cover no-repeat}
 #app-mount {border: 1px solid rgb(100,100,100);box-sizing: border-box; }
