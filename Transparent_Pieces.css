@@ -1,12 +1,10 @@
 /*base transparency and some other little stuff i dont want to worry about anymore*/
 .container-2lgZY8, .channels-Ie2l6A, .da-app .layer-3QrUeG, .da-app .layers-3iHuyZ, .da-app .chat-3bRxxu, .da-app .channelTextArea-rNsIhG, .da-app .content-yTz4x3, .da-app .messagesWrapper-3lZDfY, .da-app .chat-3bRxxu form, .da-app .members-1998pB, .da-app .headerBar-UHpsPw, .da-app .standardSidebarView-3F1I7i, .da-app .typing-2GQL18 {background: transparent}
-.da-app .guildsWrapper-5TJh6A {background:transparent;background-image: var(--transparency-1);}
-.container-PNkimc, .privateChannels-1nO12o, .da-app .sidebarRegion-VFTUkN, .da-app .container-2Thooq {background: transparent;background-image: var(--transparency-2);}
-#app-mount .container-1UB9sr {background: var(--transparency-2);background-color: transparent;}
-.da-app .activityFeed-28jde9, .da-app .gameLibrary-TTDw4Y, .da-app .applicationStore-1pNvnv, .da-app #friends, .da-app .contentRegion-3nDuYy, .da-app .noChannel-Z1DQK7, .da-app .container-3gCOGc {background: transparent;background-image: var(--transparency-3);}
-.themeDark-3Ap_7i, .da-app .chat-3bRxxu {background-color: transparent;background-image: var(--transparency-3);}
-.typeWindows-1za-n7 {background-image: var(--transparency-5);}
-.typeWindows-1za-n7 {height: 21px;margin-top: 0px;}
+.da-app .guildsWrapper-5TJh6A {background:transparent;background-image: var(--t-1);}
+.container-PNkimc, .privateChannels-1nO12o, .da-app .sidebarRegion-VFTUkN, .da-app .container-2Thooq {background: transparent;background-image: var(--t-2);}
+#app-mount .container-1UB9sr {background: var(--t-2);background-color: transparent;}
+.da-app .activityFeed-28jde9, .da-app .gameLibrary-TTDw4Y, .da-app .applicationStore-1pNvnv, .da-app #friends, .da-app .contentRegion-3nDuYy, .da-app .noChannel-Z1DQK7, .da-app .container-3gCOGc {background: transparent;background-image: var(--t-3);}
+.themeDark-3Ap_7i, .da-app .chat-3bRxxu {background-color: transparent;background-image: var(--t-3);}
 .flexCenter-3_1bcw {margin-top: 3px;}
 .unread-1xRYoj {display:none;}
 .container-2Thooq {margin-bottom: 0px;}
