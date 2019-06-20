@@ -1,0 +1,1024 @@
+/*//META{"name":"Bits'n'Pieces","description":"Personal theme. Uses bits and pieces collected all around and my own personal edits. Open .css for more info.","author":"Stix a.k.a. Rentoraa","version":"0.1.0"}*//*/}
+
+/*
+ ___________________________________________________________________________
+|   ______ __ __          __         __ ______ __                           |
+|  |   __ \__|  |_.-----.|  |.-----.|  |   __ \__|.-----.----.-----.-----.  |
+|  |   __ <  |   _|__ --| |_||     | |_|    __/  ||  -__|  __|  -__|__ --|  |
+|  |______/__|____|_____|    |__|__|   |___|  |__||_____|____|_____|_____|  |
+|___________________________________________________________________________|
+|    Commented value after active one are default.                          |
+|                                                                           |
+|    Fonts used:                                                            |
+|    - Stay On The Ground by Knackpack Studio - Titlebar                    |
+|                                                                           |
+|___________________________________________________________________________|
+
+*/
+
+/* SETTINGS */
+:root {
+    /* GRADIENT TRANSPARENCY */ 
+    /*guilds - same prefferably if using guild on hover*/
+    --t-1: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0, 0, 0, .9)) ;
+    /*channels*/
+    --t-2: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0 ,0 ,0 , .75));
+    /*text*/
+    --t-3: linear-gradient(to right, rgba(0 ,0 ,0 , .75), rgba(0 ,0 ,0 , .5));
+    /*titlebar*/
+    --t-4: linear-gradient(to right, rgba(0, 0, 0, .9), rgba(0 ,0 ,0 , .5));
+} 
+
+
+#app-mount {background: url('https://raw.githack.com/Stixie/Bits-n-Pieces/master/main-bg.png') center/cover no-repeat} /* BACKGROUND IMAGE LINK */
+/*@font-face {font-family: 'Share Tech Mono', monospace;src: url('https://raw.githack.com/Stixie/Bits-n-Pieces/master/ShareTechMono-Regular.ttf');font-stretch: ultra-condensed} /* CUSTOM FONT */
+/*::-webkit-input-placeholder,body,button,input,select,textarea {font-family: 'Share Tech Mono', monospace}*/
+#app-mount .buttonWrapper-1ZmCpA[tabindex="2"] {display: none}                 /* HIDE GIFT ICON */
+#app-mount .da-friendsOnline {display: none}                                   /* HIDE FRIENDS ONLINE */
+#app-mount .titleWrapper-1l0xT9 a { display: none }                            /* HIDE HELP */
+#app-mount .divider-2PMBlV {display: none}                                     /* HIDE SEARCH | MENTION&HELP DIVIDER */
+#app-mount {border: 1px solid rgba(30, 30, 30, 1);box-sizing: border-box}    /* APP BORDER */
+.da-username[style="color: rgb(0, 0, 1);"]{                                    /* 'FIX' FOR BLACK ROLES/NAMES IN CHAT FOR DARK/BLACK BACKGROUND - PICK ONE */
+  /*color: rgba(150, 150, 150, 1) !important;*/                                /* CHANGE NAME COLOR */
+    text-shadow: 0 0 30px rgb(255, 255, 255)  !important;                    /* SIMPLE SHADOW */
+    font-weight: 600;                                                          /* FONT BORDER */
+  /*text-shadow: 1px  1px 0px rgb(155, 155, 155),                             
+                 1px -1px 0px rgb(155, 155, 155),
+                -1px  1px 0px rgb(155, 155, 155),
+                -1px -1px 0px rgb(155, 155, 155);*/
+}
+
+
+#app-mount *{border-radius: 0 !important; mask: unset!important; -webkit-mask: unset!important}
+#app-mount *{-webkit-box-shadow: none !important; box-shadow: none !important}
+
+
+/*transparency*/
+.container-2lgZY8, .channels-Ie2l6A, .da-app .layer-3QrUeG, .da-app .layers-3iHuyZ, .da-app .chat-3bRxxu, .da-app .channelTextArea-rNsIhG, .da-app .content-yTz4x3, .da-app .messagesWrapper-3lZDfY, .da-app .chat-3bRxxu form, .da-app .members-1998pB, .da-app .headerBar-UHpsPw, .da-app .standardSidebarView-3F1I7i, .da-app .typing-2GQL18 {background: transparent}
+.da-app .wrapper-1Rf91z {background:transparent;background-image: var(--t-1)}
+.container-PNkimc, .privateChannels-1nO12o, .da-app .sidebarRegion-VFTUkN, .da-app .container-2Thooq {background: transparent;background-image: var(--t-2)}
+#app-mount .container-1UB9sr {background: var(--t-2);background-color: transparent;}
+.da-app .activityFeed-28jde9, .da-app .gameLibrary-TTDw4Y, .da-app .applicationStore-1pNvnv, .da-app #friends, .da-app .contentRegion-3nDuYy, .da-app .noChannel-Z1DQK7, .da-app .container-3gCOGc {background: transparent;background-image: var(--t-3)}
+.themeDark-3Ap_7i, .da-app .chat-3bRxxu {background-color: transparent;background-image: var(--t-3);}
+.typeWindows-1za-n7 {background-image: var(--t-4);}
+
+
+/* -------------------- to be sorted latter -------------------- */
+
+/* BUTTONS */
+/* text */
+#app-mount .item-2J1YMK {
+    color: rgba(250, 166, 26, 1);
+    background: rgba(0, 0, 0, 1);
+    border: 0px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    font-weight: 600
+}
+
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .lookFilled-1Gx00P.colorPrimary-3b3xI6 {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .closeButton-1tv5uR {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .closeButton-1tv5uR:hover {
+    background-color: rgba(250, 166, 26, 1)
+}
+/* switch */
+#app-mount .themeDefault-24hCdX {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+/* bg on click */
+.themeDefault-24hCdX:before {
+    background-color: rgba(250,166,26,1);
+}
+/*slider*/
+.sizeDefault-2YlOZr:after, .sizeMini-1ii40f {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(250,166,26,1);
+    border-radius: 0;
+    height: 15px;
+    width: 15px;
+    bottom: 0.5px
+}
+
+/* TO DO */
+/*checked*/ 
+/* BD SWITCH */
+
+/* -------------------- SOME GLOBAL STUFF -------------------- */
+
+
+
+
+
+
+/* TITLE BAR OVERRIDE */
+#app-mount .wordmark-2iDDfm * {
+    display: none;
+}
+#app-mount .wordmark-2iDDfm {
+    background: url('https://raw.githack.com/Stixie/Bits-n-Pieces/master/titlebar-bnp.png') center/cover;
+    height: 16px;
+    width: 200px;
+    top: 3px;
+    left: 6px;
+    padding: 0;
+}
+
+/* -------------------- GUILDS STUFF -------------------- */
+
+/* VISIBLE ON HOVER ONLY */
+#app-mount .wrapper-1Rf91z {
+    width: 15px;
+    position: absolute;
+    z-index: 600;
+    top: 22px;
+    bottom: 44px;
+    opacity: 0;
+}
+
+#app-mount .wrapper-1Rf91z:hover {
+    width: 70px;
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-left: 0;
+    opacity: 1;
+}
+
+/* ICON BACKGROUND */
+#app-mount .wrapper-2lTRaf {
+    background: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/* HOME ICON */
+#app-mount .da-homeIcon {
+    background: url('https://raw.githack.com/Stixie/Bits-n-Pieces/master/bitsnpieceshome.svg') center/cover;
+    color: rgba(0, 0, 0, 0);
+    z-index: 99900;
+    width: 40px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 6px
+}
+
+/* ADD GUILD / DISCOVER  */
+#app-mount .circleIconButton-jET_ig {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(30, 30, 30, 1);
+    color: rgba(250, 166, 26, 1);
+}
+
+#app-mount .messagesWrapper-3lZDfY {
+    left: 20px;
+}
+
+/* COMPACTING GUILDS  */ 
+.guild-1EfMGQ+.guild-1EfMGQ {
+    margin-top: 6px;
+}
+
+/* UNREAD MENTION/DM BADGE - GLOBAL */
+#app-mount .wrapper-232cHJ {
+    background-color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* -------------------- CHANNELS -------------------- */
+
+/* VOICE - CONNECTED USER */
+#app-mount .nameDefault-2s3kbY {
+    color: rgba(150 ,150 ,150, 1);
+}
+
+/* VOICE - CONNECTED USER ON HOVER */
+#app-mount .nameHovered-21k1eo {
+    color: rgba(200, 200, 200, 1);
+}
+
+/* VOICE - CONNECTED USER SPEAKING*/
+#app-mount .nameSpeaking-3UhoEZ {
+    color: rgba(250, 166, 26, 1)
+}
+
+/*server name*/
+#app-mount .name-3YKhmS {
+    text-align: center;
+}
+
+/* stupid categories padding*/
+#app-mount .containerDefault-3GGEv_ {
+    padding-top: 5px; /*28*/
+}
+
+/* CATEROGIES - NAME COLOR & FORMAT */
+#app-mount .nameDefault-2DI02H {
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 10px !important;
+    background-color: rgba(250,166,26,1);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* CATEGORIES - TEXT NAME COLOR & FORMAT WHEN COLLAPSED */
+#app-mount .nameCollapsed-34uFWo {
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 10px !important;
+    background-color: rgba(250,166,26,1);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* CATEGORIES - TEXT NAME COLOR & FORMAT WHEN COLLAPSED:hover */
+#app-mount .nameHoveredCollapsed-2orEWB {
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 10px !important;
+    background-color: rgba(250,166,26,1);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* CATEGORIES -  NAME COLOR & FORMAT ON HOVER */
+#app-mount .nameHovered-1gxhWH {
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 10px !important;
+    background-color: rgba(250,166,26,1);
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* CATEGORIES - LINE UNDER CATEGORY*/
+/*#app-mount .containerDefault-3GGEv_ {
+    border-bottom: 1px solid rgba(30, 30, 30, 1);
+}*/
+
+/*expand arrow - keep visible on hover*/
+svg.iconCollapsed-3hFp_8, svg.iconDefault-3Gr8d2 {
+    display: none;
+}
+
+/* UNREAD DOT */
+#app-mount .unread-1Dp-OI {
+    background-color: rgba(250, 166, 26, 1);
+    height: 5px;
+    width: 5px;
+    left: 9px;
+    margin-top: -3px;
+    position: absolute;
+    top: 50%;
+}
+
+/* UNREAD BOTTOM BAR */
+#app-mount .mention-1f5kbO {
+    background-color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1);
+    font-weight: 500;
+    bottom: 9px
+}
+/* ^^^ ARROW ICON */
+#app-mount .down-15EnQ5 {
+    color: rgba(0, 0, 0, 1)
+}
+
+/* SELECTED / UNREAD TEXT */
+#app-mount .contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* HOVERED TEXT */
+#app-mount .contentHoveredText-2D9B-x {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* USER CONTROL PANEL + voice connected */
+
+#app-mount .container-1UB9sr {
+    height: 43px;
+    width: 240px;
+    border: 0px solid rgba(30, 30, 30, 1);
+    border-bottom: 0px;
+    z-index:500
+}
+
+#app-mount .container-2Thooq {
+    height: 43px;
+    width: 240px;
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-bottom: 0px;
+    border-left: 0;
+    z-index:500
+}
+
+/* USERNAME COLOR AT STATUS PICKER */
+#app-mount .accountDetails-3k9g4n .username {
+    color: rgba(250, 166, 26, 1);
+    font-weight: 600
+}
+
+/* -------------------- STATUS PICKER -------------------- */
+
+/* ONLINE&THE REST SEPARATOR, TEXT THAT TELLS WHAT EACH STATUS DOES */
+#app-mount .da-separator, .helper-2c73HK {
+    display: none
+}
+
+/* BACKGROUND */
+#app-mount .menu-Sp6bN1 {
+    background: rgba(0, 0, 0, .9) !important;
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* line size overide */
+#app-mount .item-1GzJrl {
+    height: 23px
+}
+
+/* HOVER HIGHLIGHT */
+#app-mount .item-1GzJrl:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* status dot */
+#app-mount .status-2kJpnA, .status-oxiHuE {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* -------------------- TEXT AREA -------------------- */
+
+/* EDITED */
+#app-mount .edited-DL9ECl {
+    cursor: help;
+    color: rgba(255, 255, 255, .1)
+}
+
+
+/* TYPING POSITION */
+#app-mount .typing-2GQL18 {
+    background-color: rgba(0, 0, 0, 0);
+    position:absolute;
+    top:26px; left: 55px;
+    font-size: 10px;
+    opacity: 0.2
+}
+
+.pulsingEllipsis-3YiXRF {
+    display:none
+}
+
+/* TEXT INPUT */
+#app-mount .channelTextArea-rNsIhG {
+    margin-bottom:10px;
+    border: 0;
+    margin-top: -31px
+}
+
+/* TYPING . . . */
+#app-mount .textArea-2Spzkt  {
+    border-bottom: 5px !important;
+    border-bottom-color: fff !important
+}
+
+
+/* DIVIDER BETWEEN UPLOAD AND TEXT*/
+#app-mount  .attachButtonDivider-3Glu60 {
+    display: none
+}
+
+/* Text Box */
+#app-mount  .inner-zqa7da {
+    border: 1px solid rgba(30, 30, 30, 1);
+    background-color: rgba(0, 0, 0, 0)
+}
+
+/* Text Box - GLOBAL */
+     .channelTextArea-rNsIhG {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: 0px solid white;
+    border-top: 0px;
+    color: red;         /* AFFECTS CONTROL PANEL?! */
+    bottom: -11px;
+    padding-top: -10px
+}
+
+
+/* REMOVE CHAT BOX WHEN CHANNEL IS READ ONLY FOR USER */
+/*.channelTextAreaDisabled-rZtG8r.channelTextArea-1LDbYG.channelTextArea-rNsIhG.da-channelTextAreaDisabled.da-channelTextArea {
+    visibility: hidden
+}*/
+
+/* COUNTDOWN BEFORE POSTING MSG ON NEW SERVER */
+#app-mount .wrapper-39oAo3 {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(250, 166, 26, 1);
+    font-size: 14px;
+    font-weight: 600
+}
+
+/* NEW MSG, JUMP TO PRESENT */
+#app-mount .newMessagesBar-mujexs button {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600
+}
+
+#app-mount .newMessagesBar-mujexs button:last-child {
+    -webkit-transition: color .2s;
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+    text-transform: uppercase;
+    transition: color .2s;
+    font-weight: 600
+}
+
+#app-mount .jumpToPresentBar-9P20AM button {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    line-height: 20px;
+    padding: 3px 10px;
+    text-align: left;
+    font-weight: 600
+}
+
+#app-mount .jumpToPresentBar-9P20AM button:last-child {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 12px;
+}
+
+#app-mount  .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI {
+    color: rgba(250, 166, 26, 1);
+
+}
+#app-mount .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:after {
+    border-color: rgba(250, 166, 26, 1)
+}
+
+#app-mount .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:before {
+    border-color: rgba(250, 166, 26, 1)
+}
+
+#app-mount .hasMore-3e72_v {
+    display: none;
+}
+
+/* GIF CONTAINER */
+#app-mount .container-3ISnnM {
+    background: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+    box-sizing: border-box;
+}
+
+#app-mount .header-1TOWci {
+    background: rgba(0, 0, 0, .9)
+}
+
+#app-mount .content-ySCtCx {
+    background: rgba(0, 0, 0, .9)
+}
+
+#app-mount .input-3Xdcic {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+#app-mount .searchBar-1MOL6S {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+/*fav*/
+#app-mount .categoryFadeBlurple-1j72_A {
+    background-color: rgba(250,166,26,.5);
+}
+
+#app-mount .categoryFade-2ybR1J:hover {
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 0;
+}
+
+#app-mount .result-3w1ZcL:hover:after {
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0), inset 0 0 0 0px rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 0px rgba(0, 0, 0, 0), inset 0 0 0 0px rgba(0, 0, 0, 0)
+}
+
+/* DELETE MSG */
+#app-mount .modal-3HD5ck {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+#app-mount .inner-1JeGVc, #app-mount .modal-1UGdnR {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .containerCozyBounded-1rKFAn {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+#app-mount .footer-2yfCgX {
+    background-color: rgba(0, 0, 0, .9)
+}
+/* -------------------- MEMBERS -------------------- */
+
+/*header*/
+#app-mount .membersGroup-v9BXpm{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250,166,26,1);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 10px !important;
+    padding-top: 0px;
+    height: 22px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgba(30, 30, 30, 1);
+    }
+
+#app-mount .scrollerWrap-otKoZo {
+    width: 50px !important
+}
+
+/* USERNAME SIZE IN MEMBER LIST */
+#app-mount .username-1cB_5E {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#app-mount .member-3W1lQa:hover .content-OzHfo4 {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#app-mount .member-3W1lQa.popout-open .content-OzHfo4,
+#app-mount .member-3W1lQa.popout-open:hover .content-OzHfo4 {
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+/* BOT TAG*/
+#app-mount .botTagRegular-2HEhHi {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(111, 112, 114, 1);
+	color: rgba(250, 166, 26, 1);
+	font-weight: 900
+}
+
+/* BOT TAG ON POPOUT */
+#app-mount .botTagInvert-18-95s {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(111, 112, 114, 1);
+	color: rgba(250, 166, 26, 1);
+	font-weight: 900
+}
+
+/* POPOUT - VIEW PROFILE TEXT ON HOVER */
+#app-mount .header-2BwW8b {
+    color: rgba(255, 255, 255, 1);
+    line-height: 20px
+}
+
+/* USER POPOUT */
+#app-mount .userPopout-3XzG_A {
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+#app-mount .headerTop-3C2Zn0 {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+#app-mount .headerNormal-T_seeN {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* VIEW PROFILE */
+#app-mount .avatarHintInner-Dco91E {
+    color: rgba(250, 166, 26, 1);
+    background: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* NOTE */
+#app-mount .note-3kmerW textarea:focus {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+
+/* backgrounds - normal, playing, streaming, listening - both popout and open profile */
+#app-mount .tabBar-2MuP6-,
+#app-mount .tabBarContainer-1s1u-z, 
+#app-mount .header-QKLPzZ, 
+#app-mount .headerNormal-T_seeN,
+#app-mount .topSectionNormal-2-vo2m,
+#app-mount .headerSpotify-zpWxgT,
+#app-mount .topSectionSpotify-1lI0-P,
+#app-mount .headerStreaming-2FjmGz,
+#app-mount .topSectionStreaming-1Tpf5X,
+#app-mount .headerPlaying-j0WQBV,
+#app-mount .topSectionPlaying-1J5E4n {
+    background: rgba(0, 0, 0, .9);
+}
+
+#app-mount .body-3iLsc4, .footer-1fjuF6, .body-3ND3kc {
+    background-color: rgba(0, 0, 0, .9) !important
+}
+
+/* open profile border */
+#app-mount .root-SR8cQa {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+
+/* QUICK MSG */
+#app-mount .quickMessage-1yeL4E {
+    display: none;    
+}
+
+/* PRO TIP */
+#app-mount .footer-1fjuF6 {
+    display: none;
+}
+
+/* GAME DETAIL */
+#app-mount .gamePreview-9weYR2 {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .themedPagination-3v0Dnu {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+#app-mount .pagination-20ouY7 {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+/* -------------------- MENTIONS -------------------- */
+/* IN CHAT */
+#app-mount .wrapper-3WhCwL {
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(250, 166, 26, 1)
+}
+
+#app-mount .wrapperHover-1GktnT:hover {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    font-weight: 600
+}
+
+/* BODY */
+#app-mount .messagesPopoutWrap-1MQ1bW {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+/* HEADER */
+.recentMentionsPopout-2fmau1 .header-3LXPrb {
+    background-color: rgba(0, 0, 0, .9)
+}
+/* FUCK PRO TIPS */
+#app-mount .footer-1kmXd4 {
+    display:none;
+}
+
+/* MESSAGE */
+.messageGroupWrapperOffsetCorrection-phOU-k {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    background-color: rgba(0, 0, 0, .9);
+    }
+
+.messageGroupCozy-2iY6cT {
+    background-color: rgba(0, 0, 0, .9)
+}
+
+/* BUTTON */
+#app-mount .jumpButton-3DTcS_ {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #faa61a;
+}
+#app-mount .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+    background-color: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+    }
+
+/* you can copy text directly from mentions now */
+.disableInteraction-_YeVcv {
+    display: none;
+}
+/* -------------------- SEARCH ans surroundings -------------------- */
+
+/* SEARCH BAR - TOP */
+#app-mount .search-2oPWTC .searchBar-3dMhjb {
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+/* pins */
+#app-mount .header-ykumBX {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+/* -------------------- MARKUP & EMBED -------------------- */
+
+#app-mount .markup-2BOw-j pre {
+    border-width: 1px
+}
+
+/* CODE BLOCK */
+#app-mount .markup-2BOw-j code {
+    background-color: rgba(0, 0, 0, 1) !important;
+    border: 0px solid rgba(0, 0, 0, 0)
+}
+
+/* CODE INLINE */
+#app-mount .markup-2BOw-j code.inline {
+    border: 1px solid rgba(42, 44, 49, 1);
+}	
+
+/* LINK COLOR */
+#app-mount .markup-2BOw-j a {
+    color: rgba(0, 150, 207, 1);
+    font-weight: bold;
+}
+
+/* EMBED */
+#app-mount .embedInner-1-fpTo {   
+    background: rgba(0, 0, 0, .9);
+    border: 1px solid rgba(30, 30, 30, 1);
+}
+
+/* embed left line */
+#app-mount .embedPill-1Zntps {
+    display: none;
+}
+
+/* image */
+#app-mount .imageWrapper-2p5ogY {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* image - open - outer */
+#app-mount .inner-1JeGVc {
+    border: 0;
+    text-transform: uppercase
+}
+
+/* open original text */
+
+#app-mount .downloadLink-1ywL9o {
+    padding-left: 10px
+}
+
+/* SPOILER IMG TXT */
+#app-mount  .spoilerWarning-2aAZq1 {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount  .spoilerContainer-331r0R:hover .spoilerWarning-2aAZq1 {
+    /* background-color: rgba(0, 0, 0, 1); */
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(250, 166, 26, 1)
+}
+
+/* SPOILER IMG */
+#app-mount .spoilerContainer-331r0R.hidden-HHr2R9 {
+    border: 1px solid rgba(30, 30, 30, 1);
+    width: 250px;
+    height: 75px
+}
+
+#app-mount .spoiler-1PPAUc.hiddenSpoilers-1ksnR6 {
+    filter: opacity(0);
+}
+
+/* SPOILER TXT */
+#app-mount .spoilerText-3p6IlD.hidden-HHr2R9 {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(30, 30, 30, 1);
+    content: "SPOILER"
+}
+
+#app-mount  .spoilerText-3p6IlD {
+    background-color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    padding-left: 3px;
+    padding-right: 3px
+}
+/* SERVER INVITE */
+#app-mount .wrapper-35wsBm {
+    border: 1px solid rgba(30, 30, 30, 1);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* SPOTIFY LSITEN ALONG INVITE */
+#app-mount .invite-18yqGF {
+    background: rgba(0, 0, 0, 1);
+    border-color: rgba(30, 30, 30, 1);
+}
+/* EMOJI SIZE */
+.markup-2BOw-j .emote, .markup-2BOw-j .emoji {
+    width: 20px;
+    height: 20px;
+}
+
+/* EMOJI SIZE JUMBO - just no. */
+  .markup-2BOw-j .emote.jumboable, .markup-2BOw-j .emoji.jumboable {
+    width: 35px;
+    height: 35px;
+}
+
+/* -------------------- SCROLLBARS -------------------- */ 
+/* remove every single scrollbar part */
+#app-mount ::-webkit-scrollbar {display: none}
+#app-mount ::-webkit-scrollbar-button {display: none}
+#app-mount ::-webkit-scrollbar-track {display: none}
+#app-mount ::-webkit-scrollbar-track-piece {display: none}
+#app-mount ::-webkit-scrollbar-thumb {display: none}
+#app-mount ::-webkit-scrollbar-corner {display: none}
+#app-mount ::-webkit-resizer {display: none}
+
+
+/* -------------------- TOOLTIPS -------------------- */
+#app-mount .da-tooltip {
+    border: 1px solid rgba(30, 30, 30, 1);
+    color: rgba(250, 166, 26, 1);
+    background-color: rgba(0, 0, 0, .9)
+}
+
+/* ARROWS */
+#app-mount .da-tooltip:after {
+    border: 0px solid rgba(30, 30, 30, 1)
+}
+
+/* -------------------- BUTTONS -------------------- */
+
+/* text */
+#app-mount .item-2J1YMK {
+    color: rgba(250, 166, 26, 1);
+    background: rgba(0, 0, 0, 1);
+    border: 0px solid rgba(30, 30, 30, 1) ; /* if this is 1px border, then 9/11 didnt happen */
+}
+
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91 {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    font-weight: 600
+}
+
+#app-mount .lookFilled-1Gx00P.colorBrand-3pXr91:hover {
+    background-color: rgba(250, 166, 26, 1);
+    color: rgba(0, 0, 0, 1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* close button */
+
+#app-mount .closeButton-1tv5uR {
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+#app-mount .closeButton-1tv5uR:hover {
+    background-color: rgba(250, 166, 26, 1)
+}
+
+/* -------------------- SETTINGS -------------------- */
+
+
+/* user info*/
+#app-mount .cardPrimary-1Hv-to {
+    background: rgba(0, 0, 0, .9);
+    border-color: rgba(30, 30, 30, 1);
+}
+
+/* downloading */
+
+#app-mount .gameUpdates-2GPqBU {
+    background-color: rgba(0, 0, 0, 0);
+}
+/*
+.table-2BOVTY {
+}
+*/
+/* -------------------- PLUGINS -------------------- */
+
+/* REPO UTILS v0.1.6 by Qwerasd */
+.repoUtilsHeader {
+    color: rgba(246, 246, 247, 1);
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 12px;
+    font-weight: 600;
+    }
+
+.repoUtilsButtonGroup {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250, 166, 26, 1);
+    border: 1px solid rgba(30, 30, 30, 1);
+    left: 0.1px;
+    box-shadow: 0 0px 0px black;
+    font-weight: 600;
+}
+
+.repoUtilsButton.install {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250,166,26,1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+.repoUtilsButton.preview {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250,166,26,1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+.repoUtilsButton.download {
+    background-color: rgba(0, 0, 0, .9);
+    color: rgba(250,166,26,1);
+    border: 1px solid rgba(30, 30, 30, 1)
+}
+
+/* DateViewer v0.2.2 by hammy */
+/* stretch text box */
+#app-mount .chat-3bRxxu form {
+    margin-right: 0px
+}
+
+.membersWrap-2h-GB4.da-membersWrap  .members-1998pB.da-members {
+    height: calc(100% - 45px);
+}
+
+#dv-mount {
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid rgba(30, 30, 30, 1);
+    border-bottom: 0;
+    border-right: 0;
+    height: 45px;
+    width:260px;
+    z-index: 1;
+    right: -19px
+}
+
+span.dv-weekday {display: none}
+  
+/* better formating redux - soon */
+/*
+.bf-toolbar {
+    user-select: none;
+    white-space: nowrap;
+    font-size: 85%;
+    display: block;
+    position: absolute;
+    color: rgba(255, 255, 255, .5);
+    width: auto!important;
+    right: 0;
+    bottom: auto;
+    border-radius: 3px;
+    height: 27px!important;
+    top: -10px;
+    transform: translate(0,-100%);
+    opacity: 1;
+    overflow: visible;
+    pointer-events: none;
+    padding: 10px 30px 15px 5px;
+    margin: 0 5px 0 0;
+}*/
